@@ -1,0 +1,72 @@
+/* Importar a fonte Montserrat do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+.notification {
+  position: absolute;
+  top: 80px; /* Ajuste a posição conforme necessário */
+  right: 20px;
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: white;
+  font-family: 'Montserrat', sans-serif; /* Aplica a fonte Montserrat */
+  opacity: 0; /* Inicia escondido */
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  flex-direction: row; /* Coloca os itens em linha */
+}
+
+.notification.show {
+  opacity: 1; /* Exibe quando visível */
+}
+
+.notification-icon {
+  background: linear-gradient(190deg, #00FFFF, #007BFF, #6A0DAD);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinha o ícone à esquerda */
+  padding: 15px; /* Adiciona espaço interno ao ícone */
+  box-sizing: border-box; /* Considera padding e border na largura */
+}
+
+.notification-icon svg {
+  font-size: 2rem;
+}
+
+.notification-content {
+  flex: 1; /* Faz o conteúdo ocupar o espaço restante */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+  padding: 15px;
+}
+
+.notification-content h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.notification-content p {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.notification-content button {
+  background-color: #6A0DAD;
+  color: #fff;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif; /* Aplica a fonte Montserrat */
+  transition: background-color 0.3s ease;
+}
+
+.notification-content button:hover {
+  background-color: #007bff;
+}

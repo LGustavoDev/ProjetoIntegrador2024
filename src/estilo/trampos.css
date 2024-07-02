@@ -1,0 +1,189 @@
+/* Estilos para o container principal */
+.trampos-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para o painel esquerdo */
+  .left-pane {
+    width: 45%;
+  }
+  
+  /* Estilos para a lista de trampos */
+  .lista-trampos {
+    margin-top: 20px;
+    
+  }
+  
+  /* Estilos para cada item de trampo na lista */
+  .item-trampo {
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
+  }
+  
+  .item-trampo:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Estilos para as tags de cada trampo */
+  .tags {
+    display: flex;
+    margin-top: 8px;
+  }
+  
+  .tag-card {
+    margin-right: 8px;
+    padding: 4px 8px;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 4px;
+  }
+  
+  /* Estilos para o painel direito */
+  .right-pane {
+    width: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Estilos para os detalhes do trampo selecionado */
+  .detalhes-trampo {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+  }
+  
+  .detalhes-trampo h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .detalhes-trampo h5 {
+    font-size: 16px;
+    color: #6a0dad;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para as tags dos detalhes do trampo */
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .tag-card {
+    margin-right: 8px;
+    margin-bottom: 2px;
+    padding: 3px 5px;
+    background-color: #0056b3; /* Cor roxa com transparência */
+    color: #ffffff;
+    border-radius: 5px;
+    backdrop-filter: blur(3px); /* Efeito de desfoque para simular vidro */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borda branca com transparência */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .tag-card:hover {
+    background-color: rgba(74, 8, 118, 1); /* Aumenta a opacidade ao passar o mouse */
+  }
+  
+  /* Estilos para os botões de ação */
+  .apply-favorite {
+    margin-bottom: 20px;
+  }
+  
+  .apply-favorite  {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-family: 'Montserrat';
+  }
+
+  .apply-button {
+    padding: 20px 90px;
+    margin-right: 10px;
+    background-color: #6a0dad;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 20px
+    
+    
+  }
+  
+  .apply-button:hover{
+    background-color: #4b0082;
+  }
+
+   .favorite-button   {
+    font-size: 60px; /* Tamanho do ícone ajustado */
+    margin-left: 30px;
+    margin-bottom: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #6A0DAD; /* Cor padrão do ícone de favorito */
+    transition: color 0.3s ease; /* Transição suave de cor ao favoritar */
+    line-height: 10px; /* Define a altura da linha para alinhar verticalmente */
+       
+}
+.favorite-button .svg-inline--fa {
+   vertical-align:middle; /* Alinha verticalmente o ícone */
+}
+
+.favorite-button .svg-inline--fa.faBookmarkRegular {
+    color: #6a0dad; /* Cor para o ícone regular */
+}
+
+.favorite-button .svg-inline--fa.faBookmarkSolid {
+    color: #00FFFF /* Cor para o ícone sólido */
+}
+
+
+  /* Estilos para os botões de mais informações */
+  .more-info-buttons {
+    margin-bottom: 20px;
+  }
+  
+  .more-info-button {
+    padding: 10px 30px;
+    margin-right: 60px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .more-info-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para os detalhes da vaga */
+  .job-details {
+    margin-bottom: 20px;
+  }
+  
+  .job-details h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .job-details hr {
+    margin: 10px 0;
+    border: none;
+    border-top: 2px solid #e0e0e0;
+  }
+  
