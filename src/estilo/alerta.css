@@ -3,7 +3,7 @@
 
 .notification {
   position: absolute;
-  top: 80px; /* Ajuste a posição conforme necessário */
+  top: 100px; /* Ajuste a posição conforme necessário */
   right: 20px;
   width: 300px;
   background-color: #fff;
@@ -11,7 +11,7 @@
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   font-family: 'Montserrat', sans-serif; /* Aplica a fonte Montserrat */
   opacity: 0; /* Inicia escondido */
   transition: opacity 0.3s ease-in-out;

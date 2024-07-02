@@ -9,7 +9,7 @@
   }
   
   /* Estilos para o painel esquerdo */
-  .left-pane {
+  .painel-esquerdo {
     width: 45%;
   }
   
@@ -19,22 +19,27 @@
     
   }
   
-  /* Estilos para cada item de trampo na lista */
-  .item-trampo {
-    cursor: pointer;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #e0e0e0;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
-  }
-  
-  .item-trampo:hover {
-    background-color: #f5f5f5;
-  }
-  
-  /* Estilos para as tags de cada trampo */
+ /* Estilos para cada item de trampo na lista */
+.item-trampo {
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.9);
+}
+
+.item-trampo:hover,
+.item-trampo:focus {
+  background-color: #f5f5f5;
+  transform: translateY(-4px); /* Move o elemento para cima ao passar o mouse */
+}
+
+.item-trampo:active {
+  transform: translateY(5px); /* Efeito de pressionar ao clicar */
+}
+ /* Estilos para as tags de cada trampo */
   .tags {
     display: flex;
     margin-top: 8px;
@@ -49,7 +54,7 @@
   }
   
   /* Estilos para o painel direito */
-  .right-pane {
+  .painel-direito {
     width: 50%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   }
@@ -60,6 +65,11 @@
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
+    transition: box-shadow 0.3s ease; /* Transição suave para a sombra */
+  }
+  
+  .detalhes-trampo:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8); /* Aumenta a sombra ao passar o mouse */
   }
   
   .detalhes-trampo h1 {
@@ -72,6 +82,7 @@
     color: #6a0dad;
     margin-bottom: 20px;
   }
+
   
   /* Estilos para as tags dos detalhes do trampo */
   .tags {
@@ -97,18 +108,18 @@
   }
   
   /* Estilos para os botões de ação */
-  .apply-favorite {
+  .aplicar-favorito {
     margin-bottom: 20px;
   }
   
-  .apply-favorite  {
+  .aplicar-favorito  {
     font-size: 12px;
     margin-top: 10px;
     margin-bottom: 0;
     font-family: 'Montserrat';
   }
 
-  .apply-button {
+  .botao-aplicar {
     padding: 20px 90px;
     margin-right: 10px;
     background-color: #6a0dad;
@@ -122,11 +133,11 @@
     
   }
   
-  .apply-button:hover{
+  .botao-aplicar:hover{
     background-color: #4b0082;
   }
 
-   .favorite-button   {
+   .botao-favorito   {
     font-size: 60px; /* Tamanho do ícone ajustado */
     margin-left: 30px;
     margin-bottom: 30px;
@@ -138,25 +149,25 @@
     line-height: 10px; /* Define a altura da linha para alinhar verticalmente */
        
 }
-.favorite-button .svg-inline--fa {
+.botao-favorito .svg-inline--fa {
    vertical-align:middle; /* Alinha verticalmente o ícone */
 }
 
-.favorite-button .svg-inline--fa.faBookmarkRegular {
+.botao-favorito .svg-inline--fa.faBookmarkRegular {
     color: #6a0dad; /* Cor para o ícone regular */
 }
 
-.favorite-button .svg-inline--fa.faBookmarkSolid {
+.botao-favorito .svg-inline--fa.faBookmarkSolid {
     color: #00FFFF /* Cor para o ícone sólido */
 }
 
 
   /* Estilos para os botões de mais informações */
-  .more-info-buttons {
+  .mais-informacoes {
     margin-bottom: 20px;
   }
   
-  .more-info-button {
+  .botao-mais-informacoes {
     padding: 10px 30px;
     margin-right: 60px;
     background-color: #007bff;
@@ -167,21 +178,21 @@
     transition: background-color 0.3s ease;
   }
   
-  .more-info-button:hover {
+  .botao-mais-informacoes:hover {
     background-color: #0056b3;
   }
   
   /* Estilos para os detalhes da vaga */
-  .job-details {
+  .detalhes-trampo {
     margin-bottom: 20px;
   }
   
-  .job-details h2 {
+  .detalhes-trampo h2 {
     font-size: 25px;
     margin-bottom: 10px;
   }
   
-  .job-details hr {
+  .detalhes-trampo hr {
     margin: 10px 0;
     border: none;
     border-top: 2px solid #e0e0e0;

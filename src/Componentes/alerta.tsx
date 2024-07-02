@@ -18,7 +18,7 @@ const Alerta: React.FC<AlertaProps> = ({ onClose }) => {
       const area = "ADM";
       setMessage(`Você tem ${vagas} novas vagas ${area}.`);
       setVisible(true); // Exibe o alerta quando os dados estão prontos
-    }, 500); // Reduzindo para 0.5 segundos
+    }, 300); // Reduzindo para 0.5 segundos
   }, []);
 
   const handleButtonClick = () => {
