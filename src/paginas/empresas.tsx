@@ -1,5 +1,5 @@
 import React from "react";
-import '../src/estilo/menuempresa.css';
+import '../estilo/menuempresa.css';
 import MenuEmpresa from "../Componentes/menuEmpresa";
 
 
