@@ -1,10 +1,12 @@
 import React from "react";
-import '../src/estilo/estilo.css';
+import '../src/estilo/menuempresa.css';
+import MenuEmpresa from "../Componentes/menuEmpresa";
+
 
 function Empresas() {
     return (
         <div>
-
+            <MenuEmpresa/>
         </div>
     )
 }
