@@ -1,0 +1,266 @@
+/* Cabeçalho fixo */
+.div-conteiner {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.imagem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.Logo {
+    height: 70px;
+}
+
+.tags-li {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.infos-cab {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.infos-cab li {
+    margin: 0 25px;
+}
+
+.infos-cab li a {
+    text-decoration: none;
+    color: black;
+}
+
+.botao-config {
+    padding-right: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.botao-cabecalho {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao-cabecalho:hover {
+    background-color: #0056b3;
+}
+
+.cor-cabecalho {
+    width: 100%;
+    height: 9px;
+    background: linear-gradient(to right, #d2d6f3, #8e83ec, #392ca7, #da2afd);
+}
+
+/* Contêiner principal da tela de cadastro */
+.Conteiner-Cadastro {
+    background: linear-gradient(to right, #d2d6f3, #8e83ec, #392ca7, #da2afd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.Tela-cadastro {
+    box-shadow: 5px 10px 10px black;
+    border-radius: 50px;
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: #ffffff88;
+    padding: 20px;
+}
+
+.Logo-cadastro {
+    padding: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 150px;
+}
+
+.Titulo-Cadastro {
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+}
+
+.Titulo-Final {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.Titulo-Final a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.Palavra-Destaque {
+    color: #0059ff;
+    /* Ajuste a cor conforme necessário */
+}
+
+.Titulo-Final a:hover {
+    color: #0059ff;
+}
+
+.Centro-Cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.Centro-Cadastro a {
+    text-decoration: none;
+    color: black;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.Voltar {
+    width: inherit;
+}
+
+.Botao-Voltar {
+    background-color: rgba(165, 165, 165, 0.2);
+    border-radius: 50px;
+    margin: 50px;
+    box-shadow: 4.5px 10px 10px black;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    /*Position absolute segue esse principio para posicionar o botão de forma rapida*/
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.Botao-Cadastro {
+    background-color: rgba(165, 165, 165, 0.2);
+    border-radius: 50px;
+    margin: 50px;
+    box-shadow: 4.5px 10px 10px black;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.Botao-Cadastro:hover {
+    transform: scale(1.05);
+}
+
+.Perfil-Solo,
+.Perfil-Grupo {
+    width: 100px;
+}
+
+.Candidato,
+.Empresas {
+    font-size: 21px;
+    text-align: center;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .imagem {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .infos-cab {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infos-cab li {
+        margin: 10px 0;
+    }
+
+    .Logo {
+        height: 50px;
+    }
+
+    .Logo-cadastro {
+        width: 100px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .Titulo-Cadastro {
+        margin-top: 80px;
+    }
+
+    .Botao-Cadastro {
+        width: 150px;
+        height: 150px;
+    }
+
+    .Candidato,
+    .Empresas {
+        font-size: 18px;
+    }
+}
+
+/* Parte do projeto onde faz a onda no cabeçalho*/
+
+.wave-bar {
+    width: 100%;
+    height: 15px;
+    /* Ajuste a altura conforme necessário */
+    background: linear-gradient(90deg, #02d9ff, #008cff, #ff00ea);
+    background-size: 300%;
+    animation: wave 3s infinite;
+}
+
+@keyframes wave {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
