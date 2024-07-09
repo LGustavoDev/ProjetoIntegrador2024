@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import '../estilo/estilos1.css'
 
 
+
+
 function Cadastro() {
     return (
         <div className="Conteiner-Cadastro">
@@ -13,6 +15,7 @@ function Cadastro() {
                     </Link>
                 </div>
                 <div className="imagem">
+                    
                     <img className="Logo-cadastro" src="/img/Logo.png" alt="Logo" />
                 </div>
                 <h1 className="Titulo-Cadastro">
