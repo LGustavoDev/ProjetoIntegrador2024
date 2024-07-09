@@ -1,4 +1,5 @@
 import React from "react";
+import '../estilo/estilo.css'
 import '../estilo/menuempresa.css'
 import { FaBell, FaUsers } from "react-icons/fa";
 
