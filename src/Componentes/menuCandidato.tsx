@@ -22,10 +22,11 @@ const MenuCandidato: React.FC = () => {
                 <div className="logo">
                     <img src='Logo-Vetor-01.png' alt='Logo' />
                 </div>
-className="menu-options">
-                    <ul></ul>
-                <nav 
-                    <li>< Link to="/"> Trampos </Link> </li>
+
+                    
+                <nav className="menu-options"> 
+                    <ul>
+                        <li>< Link to="/"> Trampos </Link> </li>
                         <li><a href="#">Carreiras</a></li>
                         <li><a href="#">Quem Somos</a></li>
                         <li><a href="#">Suporte</a></li>
