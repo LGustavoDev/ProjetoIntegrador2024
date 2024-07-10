@@ -18,11 +18,11 @@ function MenuEmpresa() {
                     </ul>
                 </nav>
 
-                <div className="icone-sino">
+                <div className="icone icone-sino">
                     <FaBell/>
                 </div>
-                <div className="icone-empresa">
-                    <FaUsers/> <span>Nome da Empresa</span>
+                <div className="icone icone-empresa">
+                    <FaUsers/> <div className="icone-name">Nome da Empresa</div>
                 </div>
 
             </div>
@@ -36,10 +36,10 @@ function MenuEmpresa() {
                         <li><a href="#"> Histórico de Vagas</a></li>
                         <li><a href="#"> Candidatos</a></li>
                         <li><a href="#"> Entrevistas</a></li>
-                        <li></li>
-                        
+                       
                     </ul>
                 </nav>
+                <hr />
             </div>
           
 
