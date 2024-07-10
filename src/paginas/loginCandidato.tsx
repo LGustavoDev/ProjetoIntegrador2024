@@ -4,10 +4,10 @@ import "../../estilo/estilo.css"
 function Login() {
     return (
         <div>
-            Hellow 
+            LOGIN
         </div>
     )
-    
+
 
 }
 
