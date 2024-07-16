@@ -1,11 +1,7 @@
 import React from "react";
 
 function Rodapé() {
-    return (
-        <div>
-
-        </div>
-    )
+  return <div></div>;
 }
 
-export default Rodapé
+export default Rodapé;
