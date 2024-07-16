@@ -1,0 +1,89 @@
+
+
+.vagas-container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.vagas-detalhes {
+    padding: 20px;
+
+}
+
+.vagas-detalhes h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    
+}
+
+.vagas-detalhes h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+
+.tags {
+    display: flex;
+    margin-top: 10px;
+
+}
+.tags-card {
+    margin-right: 10px;
+    padding: 4px 8px ;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.vagas-candidatar {
+    display: flex;
+    margin-top: 10px;
+}
+
+.btm-candidatar {
+    padding: 20px 90px;
+    margin-right: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    background-color: #007bff;
+    transition: 0.3s ease;
+
+}
+
+.btm-candidatar:hover {
+    background-color: #4b0082;
+
+}
+
+.btn-candidatar-icon {
+    margin-right: 10px;
+}
+
+.btm-favorito {
+   cursor: pointer;
+   border: none;
+   font-size: 60px;
+   color: #007bff;
+   transition: color 0.3s ease;    
+}
+
+.btm-favorito .svg-inline--fa.faBookmarkRegular {
+    color:  #00ffff;    
+}
+
+
+.btm-favorito .svg-inline--fa.faBookmarkSolid {
+    color: #4b0082;    
+}
+
+
+
+
+
+
+
