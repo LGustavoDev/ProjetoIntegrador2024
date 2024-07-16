@@ -1,24 +1,21 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import './estilo/estilo.css'; // Importe o CSS corretamente, se necessário
-import Trampos from './paginas/trampos';
-import Recuperar from './paginas/recuperarsenha';
-import CadastroEmpresa from './paginas/cadastroEmpresa';
-import Empresas from './paginas/empresas';
-import './estilo/menuempresa.css'
-
+// React
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+//Estilos CSS
+import "./estilo/menuempresa.css";
+import "./estilo/estilo.css";
+//Paginas
+import Inicio from "./paginas/inicio";
+import Recuperar from "./paginas/recuperarsenha";
 
 function App() {
   return (
-       <div className="App">
-        < Routes>
-          <Route path="/" element={<Trampos/>} />
-          <Route path="/senha" element={<Recuperar/>} /> 
-          <Route path='/cadastro' element={<CadastroEmpresa/>}  /> 
-          <Route path='/empresas' element={<Empresas/>} />    
-        </ Routes>
-      </div>
-    
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/senha" element={<Recuperar />} />
+      </Routes>
+    </div>
   );
 }
 
