@@ -2,11 +2,11 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 //Estilos CSS
-import "./estilo/menuempresa.css";
-import "./estilo/estilo.css";
+
 //Paginas
 import Inicio from "./paginas/inicio";
 import Recuperar from "./paginas/recuperarsenha";
+import Vagas from "./paginas/vagas";
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/senha" element={<Recuperar />} />
+        <Route path="/vaga" element={<Vagas/>} />
       </Routes>
     </div>
   );
