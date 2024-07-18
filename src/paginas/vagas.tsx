@@ -45,15 +45,21 @@ function Vagas() {
                     <h2>Dados da Vaga</h2>
                     <hr />
                     <p>Tipo de vaga</p>
-                    <p>Tag da vaga</p>
+                    <p className="tags-card">Tag da vaga</p>
                     <hr />
                     <h2>Localização</h2>
-                    <p>Tag Cidade</p>
+                    <p className="tags-card">Tag Cidade</p>
                     <hr />
                     <h2>Beneficios</h2>
-                    <ul>
-                        <li>Descrição do Beneficio</li>
-                    </ul>
+                    <div className="beneficio">
+                        <ul>
+                            <li>Descrição do Beneficio</li>
+                        </ul>
+                    </div>
+                    <br />
+                    <hr />
+                    <br />
+
                     <h2>Descrição completa da vaga</h2>
                     <p>Sobre a vaga</p>
                 </div>

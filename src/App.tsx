@@ -7,6 +7,7 @@ import { Routes, Route } from "react-router-dom";
 import Inicio from "./paginas/inicio";
 import Recuperar from "./paginas/recuperarsenha";
 import Vagas from "./paginas/vagas";
+import Login from "./paginas/login";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Inicio />} />
         <Route path="/senha" element={<Recuperar />} />
         <Route path="/vaga" element={<Vagas/>} />
+        <Route path="/login" element={<Login/>} />
       </Routes>
     </div>
   );

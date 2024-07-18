@@ -81,6 +81,41 @@
     color: #4b0082;    
 }
 
+.vagas-informacao, .empresa-informacao {
+   margin: 20px;
+
+}
+
+.vagas-informacao h2, .empresa-informacao h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+
+}
+
+.vagas-informacao p, .empresa-informacao p {
+    margin-top: 15px;
+    margin-left: 20px;
+
+}
+
+.vagas-informacao .tags-card {
+    width: 150px;
+    height: 30px;
+    padding: 4px 8px ;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.beneficio {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    
+}
+
+
+
 
 
 
