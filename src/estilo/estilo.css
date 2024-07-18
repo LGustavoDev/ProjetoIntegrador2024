@@ -6,7 +6,7 @@
 }
 
 /* Importando as fontes Montserrat */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
 
 /* Estilos gerais */
 .corpo {
@@ -14,7 +14,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgba(0, 255, 255, 0.3), rgba(0, 123, 255, 0.3), rgba(106, 13, 173, 0.3));
+  background: linear-gradient(
+    rgba(0, 255, 255, 0.3),
+    rgba(0, 123, 255, 0.3),
+    rgba(106, 13, 173, 0.3)
+  );
 }
 
 .container {
@@ -58,7 +62,7 @@
 
 .voltar svg {
   margin-right: 8px;
-  transition: transform 0.2s ease; /* Transição suave para o ícone */
+  transform: 0.2s ease; /* Transição suave para o ícone */
 }
 
 .voltar:hover {
@@ -87,7 +91,7 @@
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700; /* Montserrat Bold */
   font-size: 30px; /* Ajuste conforme necessário */
   color: #000; /* Cor do texto do título */
@@ -95,7 +99,7 @@ h1 {
 }
 
 p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400; /* Montserrat Regular */
   font-size: 16px; /* Ajuste conforme necessário */
   color: #333; /* Cor do texto do parágrafo */
@@ -112,7 +116,7 @@ p {
 
 .botoes button {
   padding: 10px 20px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #007bff;
   background-color: transparent;
@@ -136,7 +140,7 @@ p {
 }
 
 .input-container label {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #007bff;
   margin-bottom: 5px;
@@ -145,7 +149,7 @@ p {
 .input-container input {
   width: 80%;
   padding: 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -157,7 +161,7 @@ p {
 }
 
 .error-message {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   color: #dc3545; /* Cor do texto de erro */
   margin-top: 5px; /* Espaço acima da mensagem de erro */
@@ -166,7 +170,7 @@ p {
 .enviar-button {
   margin-top: 10px; /* Espaço entre o input e o botão */
   padding: 10px 20px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: white;
   background-color: #007bff;
@@ -178,8 +182,8 @@ p {
 
 .enviar-button:hover {
   background: linear-gradient(
-    rgba(0, 255, 255), 
-    rgba(0, 123, 255), 
+    rgba(0, 255, 255),
+    rgba(0, 123, 255),
     rgba(106, 13, 173)
   ); /* Gradiente ao passar o mouse */
 }
@@ -199,5 +203,7 @@ p {
 }
 
 .imagem img:hover {
-  transform: scale(1.1); /* Expande a imagem em 10% quando o mouse passa por cima */
+  transform: scale(
+    1.1
+  ); /* Expande a imagem em 10% quando o mouse passa por cima */
 }
