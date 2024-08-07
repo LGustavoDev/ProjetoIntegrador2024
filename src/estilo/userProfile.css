@@ -1,0 +1,168 @@
+/* userProfile.css */
+
+/* Container principal do perfil do usuário */
+.perfil-usuario {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header do perfil com foto e informações principais */
+.perfil-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #4a0876;
+  padding-bottom: 20px;
+}
+
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.perfil-header-content {
+  flex: 1;
+}
+
+.perfil-header h2 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #333;
+}
+
+.perfil-header p {
+  margin: 5px 0;
+  font-size: 1.1em;
+  color: #666;
+}
+
+.edit-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #3a065c;
+}
+
+/* Estilos do formulário de edição */
+.perfil-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.perfil-form label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.perfil-form input,
+.perfil-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-top: 4px;
+}
+
+.perfil-form input[type="file"] {
+  border: none;
+  padding: 0;
+}
+
+.save-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #007bff;
+}
+
+/* Estilo para seções do perfil */
+.perfil-section {
+  margin-bottom: 20px;
+}
+
+.perfil-section h3 {
+  margin-top: 0;
+  font-size: 1.8em;
+  color: #007bff;
+  border-bottom: 2px solid #4a0876;
+  padding-bottom: 10px;
+}
+
+.perfil-section p,
+.perfil-section div {
+  margin: 10px 0;
+  font-size: 1em;
+  color: #333;
+}
+
+.perfil-section a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.perfil-section a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para links de download */
+.download-link {
+  color: #4a0876;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.download-link:hover {
+  text-decoration: underline;
+}
+
+/* Estilos de apresentação de informações */
+.perfil-dados {
+  font-size: 1em;
+  color: #333;
+}
+
+.perfil-dados p {
+  margin: 10px 0;
+}
+
+.perfil-dados a {
+  color: #4a0876;
+  text-decoration: none;
+}
+
+.perfil-dados a:hover {
+  text-decoration: underline;
+}

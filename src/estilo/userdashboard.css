@@ -1,0 +1,74 @@
+/* estilo/userdashboard.css */
+
+.user-dashboard {
+  display: flex;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.sidebar-user {
+  width: 250px;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo-container-user {
+  margin-bottom: 30px;
+}
+
+.logo-container-user .logo {
+  width: 150px;
+  height: auto;
+}
+
+.menu-user {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu-user button,
+.menu-user .logout-button-user {
+  background: none;
+  border: none;
+  color: #ffffff;
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.menu-user button:hover,
+.menu-user .logout-button-user:hover {
+  background-color: #3a0558;
+}
+
+.menu-user .logout-button-user {
+  margin-top: auto;
+  text-decoration: none;
+}
+
+.menu-user button svg,
+.menu-user .logout-button-user svg {
+  margin-right: 10px;
+}
+
+.content {
+  flex: 1;
+  padding: 40px;
+  background-color: #ffffff;
+  overflow-y: auto;
+}
+
+.content h2 {
+  font-size: 24px;
+  color: #333;
+}

@@ -1,0 +1,93 @@
+/* companydashboard.css */
+.toggle-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #e2f7fd;
+  margin-left: 10px;
+}
+
+.company-dashboard {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #000;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinha o conteúdo ao centro */
+}
+
+.sidebar.hidden {
+  width: auto;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Adiciona espaço abaixo do logo */
+}
+
+.profile-info {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.company-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu-group {
+  margin-bottom: 20px;
+}
+
+.menu button,
+.logout-button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  text-align: left;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.menu button:hover,
+.logout-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu button svg,
+.logout-button svg {
+  margin-right: 10px;
+}
+
+.submenu {
+  margin-left: 20px;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}

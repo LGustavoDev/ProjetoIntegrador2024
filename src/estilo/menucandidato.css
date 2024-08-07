@@ -1,96 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 .menu-container {
-    width: 100%;
+  width: 100%;
 }
 
 .menu-candidato {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
 }
 
-.logo{
-    justify-content: flex-start; /* Garante que o logo esteja alinhado à direita */
+.logo {
+  justify-content: flex-start; /* Garante que o logo esteja alinhado à direita */
 }
 
-.logo img {
-    height: 90px; /* Ajuste o tamanho conforme necessário */
+.logo .logofinal {
+  height: auto;
+  width: auto;
 }
 
 .menu-options {
-    flex-grow: 1;
-    text-align: center;
+  flex-grow: 1;
+  text-align: center;
 }
 
 .menu-options ul {
-    list-style-type: none;
-    display: inline-flex;
-    gap: 20px; /* Ajuste o espaço entre os itens conforme necessário */
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif; /* Use a fonte Montserrat */
-    font-size: 20px; /* Tamanho da fonte 40 */
-    font-weight: bold; 
+  list-style-type: none;
+  display: inline-flex;
+  gap: 20px; /* Ajuste o espaço entre os itens conforme necessário */
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif; /* Use a fonte Montserrat */
+  font-size: 20px; /* Tamanho da fonte 40 */
+  font-weight: bold;
 }
 
 .menu-options li {
-    margin: 0;
+  margin: 0;
 }
 
 .menu-options a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
 
 .icon {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    margin-left: 90px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  margin-right: 50px;
 }
 
 .bell-icon {
-    font-size: 35px; /* Tamanho maior para o ícone de sino */
+  font-size: 20px; /* Tamanho maior para o ícone de sino */
 }
 
 .user-icon {
-    font-size: 70px; /* Tamanho significativamente maior para o ícone de usuário */
+  font-size: 30px; /* Tamanho significativamente maior para o ícone de usuário */
 }
 
 .grad-bar {
-    width: 100%;
-    height: 5px;
-    background: linear-gradient(90deg,
-      rgba(0, 255, 255),
-      rgba(0, 123, 255),
-      rgba(106, 13, 173)
-    );
-    margin-top: 10px;
-    position: relative; /* Necessário para posicionamento absoluto dos pseudo-elementos */
-    overflow: hidden; /* Para esconder qualquer parte do gradiente que saia dos limites */
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 255),
+    rgb(3, 55, 110),
+    rgba(106, 13, 173)
+  );
+  margin-top: 1px;
+  position: relative; /* Necessário para posicionamento absoluto dos pseudo-elementos */
+  overflow: hidden; /* Para esconder qualquer parte do gradiente que saia dos limites */
+}
+
+.grad-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%; /* Começa fora da visão à esquerda */
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 255),
+    rgba(0, 123, 255),
+    rgba(106, 13, 173)
+  );
+  animation: moveWater 10s linear infinite; /* Animação de movimento da água */
+}
+
+@keyframes moveWater {
+  to {
+    left: 100%; /* Move completamente para a direita */
   }
-  
-  .grad-bar::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%; /* Começa fora da visão à esquerda */
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg,
-      rgba(0, 255, 255),
-      rgba(0, 123, 255),
-      rgba(106, 13, 173)
-    );
-    animation: moveWater 10s linear infinite; /* Animação de movimento da água */
-  }
-  
-  @keyframes moveWater {
-    to {
-      left: 100%; /* Move completamente para a direita */
-    }
-  }
+}

@@ -1,0 +1,181 @@
+/* visualizarVagas.css */
+
+.ver-vagas {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.vagas-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vaga-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  transition: box-shadow 0.3s;
+  position: relative;
+}
+
+.vaga-item:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.vaga-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vaga-summary h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #007bff;
+}
+
+.vaga-summary p {
+  margin: 10px 0;
+  color: #666;
+}
+
+.view-details-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 1em;
+}
+
+.view-details-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.vaga-details {
+  margin-top: 15px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+.vaga-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.vaga-edit-form label {
+  display: block;
+  color: #333;
+}
+
+.vaga-edit-form input[type="text"],
+.vaga-edit-form textarea,
+.vaga-edit-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.benefit-input {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.benefit-input input {
+  flex: 1;
+}
+
+.vaga-detail-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.vaga-detail-item strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.vaga-detail-item p {
+  margin: 0;
+  color: #666;
+}
+
+.vaga-action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.edit-button,
+.remove-button,
+.cancel-edit,
+.save-button {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 1em;
+}
+
+.edit-button {
+  background-color: #007bff;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.remove-button {
+  background-color: #dc3545;
+}
+
+.remove-button:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+.cancel-edit {
+  background-color: #dc3545;
+}
+
+.cancel-edit:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+.save-button {
+  background-color: #28a745;
+}
+
+.save-button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
